@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #view
+    canvas#bg
+    canvas#game
+    canvas#hit
+
+  ul#messages
+
+  form(action="")
+    input#m(autocomplete="off")
+    button send
